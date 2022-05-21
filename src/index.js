@@ -2,12 +2,15 @@ import React from "react";
 import  ReactDOM  from "react-dom/client";
 import App from './App';
 
-import TodoList8 from "./Components/TodoList8";
+
+
+import ThreeCheckbox from "./Components/ThreeCheckbox";
+
 
 const root =ReactDOM.createRoot(document.getElementById('root'));
 
 root.render(
   <>
-      <TodoList8 />
+      <ThreeCheckbox />
   </>
 )
