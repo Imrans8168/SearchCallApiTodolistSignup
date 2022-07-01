@@ -1,30 +1,29 @@
-import React, { useEffect, useState } from "react";
+import React from 'react'
+import Data from './Data';
+const App = () => {
 
-const App =()=>{  
-  const [item,setItem] = useState([]);
-  useEffect(()=>{
-    const fetchapi = async ()=>{
-      const url = "https://jsonplaceholder.typicode.com/todos";
-      const response = await fetch(url);
-      const data =await response.json();
-      setItem(data);
-    }
-    fetchapi();
-  },[]) 
+  console.log(Data);
 
-  return(
-          <>
-              {
-                item.map((e,index)=>{
-                  return(
-                    <div key={index}>
-                      <span>{e.title}</span><input type="checkbox" defaultChecked={e.completed} />
-                    </div>
-                  );
-                })
-              }
-          </>
+  return (
+    <>
+     {
+       Data.map((e,ind)=>{
+         return(
+           <div>
+              <h1>name   -{e.name}</h1>
+              <h1>year  -{e.year}</h1>
+              <h1>Budget  -{e.Budget}</h1>
+              <h1>Cast   -{e.Cast}</h1>
+              <h1>Reviews - {e.Reviews}</h1>
+              <h1>Language - {e.Language}</h1>
+              <hr/>
+           </div>
+         )
+       })
+     }
+    </>
+
   )
 }
 
-export default App;
+export default App

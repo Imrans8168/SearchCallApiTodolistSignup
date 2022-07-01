@@ -1,16 +1,12 @@
 import React from "react";
-import  ReactDOM  from "react-dom/client";
-import App from './App';
+import  ReactDOM from "react-dom/client";
+import Search16 from "./Components/Search16";
 
 
-
-import ThreeCheckbox from "./Components/ThreeCheckbox";
-
-
-const root =ReactDOM.createRoot(document.getElementById('root'));
+const root = ReactDOM.createRoot(document.getElementById("root"));
 
 root.render(
   <>
-      <ThreeCheckbox />
+    <Search16 />
   </>
 )

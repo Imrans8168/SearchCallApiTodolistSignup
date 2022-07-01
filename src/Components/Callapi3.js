@@ -6,7 +6,6 @@ const Callapi3 = () => {
 
     useEffect(()=>{
         const fetchapi = async ()=>{
-
             const url ="https://jsonplaceholder.typicode.com/todos";
             const response = await fetch(url);
             const data = await response.json();
