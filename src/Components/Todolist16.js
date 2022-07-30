@@ -11,6 +11,7 @@ const addItem =()=>{
 
     }
     else{
+    
         setItem([...item,input]);
     }
 }
@@ -29,7 +30,7 @@ setItem(updateditem);
         <button onClick={addItem}>+</button>
         {
             item.map((e,ind)=>{
-                return <h1 key={ind}>{e}<button onClick={()=>deleteItem(ind)}>X</button></h1>
+                return <h1 key={ind} >{e}<button onClick={()=>deleteItem(ind)}> X </button></h1>
             })
         }
     </>

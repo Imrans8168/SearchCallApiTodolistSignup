@@ -22,7 +22,7 @@ const TodoList1 = () => {
 
        const updatedItem = item.filter((val,ind)=>{
            return ind !=id;
-       })
+       });
         setItem(updatedItem);
     }
 
@@ -32,7 +32,7 @@ const TodoList1 = () => {
     <input type="text" name='input' value={input} onChange={oninput} /> 
     <button onClick={addItem}>+</button>
 
-    {
+   {
         item.map((e,ind)=>{
             return(
                 <h1 key={ind}>{e} <button onClick={()=>deleteItem(ind)}>X</button></h1>

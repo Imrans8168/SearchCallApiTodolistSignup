@@ -7,7 +7,7 @@ const TableRender = () => {
 
     useEffect(()=>{
         const fetchapi = async()=>{
-            const url ="https://jsonplaceholder.typicode.com/users";
+            const url ="https://www.alphavantage.co/query?function=TIME_SERIES_INTRADAY&symbol=IBM&interval=5min&apikey=demo";
             const response = await fetch(url);
             const data = await response.json();
             setItem(data);

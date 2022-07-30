@@ -1,0 +1,32 @@
+.container{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+   background-color: aqua;
+ 
+}
+
+.divinput{
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.input{
+    padding: 5px;
+    width: 300px;
+    text-align: center;
+    border-radius: 5px;
+   
+}
+.btn{
+    background-color: rgb(27, 106, 172);
+    width: 100px;
+    cursor: pointer;
+    height: 30px;
+    color: white;
+    font-size: auto;
+    border: none;
+    border-radius: 5px;
+}

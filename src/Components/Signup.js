@@ -47,24 +47,24 @@ const Signup = () => {
     }
 
     const valid =()=>{
-       setNameError("");
-       setEmailError("");
-       setPasswordError("");
-       let check = true;
+                setNameError("");
+                setEmailError("");
+                setPasswordError("");
+                let check = true;
 
-       if(name ===""){
-           setNameError("Please Enter the name");
-           check =false;
-       }
-       if(email==="" || !validateEmail(email)){
-           setEmailError("Invalid Email");
-           check =false;
-       }
-       if(password==="" || !validatePassword(password)){
-           setPasswordError("Please Enter valid Password");
-           return false;
-       }
-       return check;
+                if(name ===""){
+                    setNameError("Please Enter the name");
+                    check =false;
+                }
+                if(email==="" || !validateEmail(email)){
+                    setEmailError("Invalid Email");
+                    check =false;
+                }
+                if(password==="" || !validatePassword(password)){
+                    setPasswordError("Please Enter valid Password");
+                    return false;
+                }
+                return check;
     }
 
     console.log(name);

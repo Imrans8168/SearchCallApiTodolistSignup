@@ -1,0 +1,27 @@
+.container{
+    background-color: #33cf5acc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    width: 100vw;
+}
+.inputdiv{
+   margin-top: 20px;
+   display: flex;
+    justify-content: center;
+    align-items: center;
+}
+input{
+    padding: 10px;
+    border-radius: 10px;
+    text-align: center;
+    border: none;
+}
+.btn{
+   width: 100px;
+    cursor: pointer;
+    border-radius: 5px;
+    height: 50px;
+
+}

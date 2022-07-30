@@ -1,12 +1,13 @@
 import React from "react";
 import  ReactDOM from "react-dom/client";
-import Search16 from "./Components/Search16";
+//import Signup from "./Components/Signup";
+import SignupForm1 from "./Components/SignupForm1";
 
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
 root.render(
   <>
-    <Search16 />
+    <SignupForm1/>
   </>
 )
